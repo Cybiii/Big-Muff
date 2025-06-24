@@ -10,6 +10,16 @@ This project describes a custom-designed **Big Muff** guitar effects pedal, buil
 
 The circuit features four **NPN 2N2222 transistors** configured in distinct stages: an input buffer, two gain/clipping stages, a passive tone control section, and an output buffer with volume control. The design incorporates silicon diodes for controlled signal clipping and a comprehensive network of resistors and capacitors for optimal signal processing and tone shaping.
 
+<p align="center">
+    <img src="Images/1.png" width="700" alt="Front view of the PCB">
+    <p align="center">Figure 1: Front view of the PCB</p>
+</p>
+
+<p align="center">
+    <img src="Images/2.png" width="700" alt="Back view of the PCB">
+    <p align="center">Figure 2: Back view of the PCB</p>
+</p>
+
 ## Project Architecture
 
 The project is structured hierarchically within KiCad, with the following key sections:
@@ -56,7 +66,7 @@ The PCB is meticulously designed with the following **4 layers** to optimize **s
 
 <p align="center">
     <img src="Images/Layer1.png" width="700" alt="Top Layer View">
-    <p align="center">Figure 1: Top copper layer showing component placement and primary routing</p>
+    <p align="center">Figure 3: Top copper layer showing component placement and primary routing</p>
 </p>
 
 2.  **Power Layer (In1.Cu - Inner Copper 1):**
@@ -65,7 +75,7 @@ The PCB is meticulously designed with the following **4 layers** to optimize **s
 
 <p align="center">
     <img src="Images/Layer2.png" width="700" alt="Power Layer View">
-    <p align="center">Figure 2: Internal power plane for stable 9V power delivery network</p>
+    <p align="center">Figure 4: Internal power plane for stable 9V power delivery network</p>
 </p>
 
 3.  **Ground Layer (In2.Cu - Inner Copper 2):**
@@ -74,7 +84,7 @@ The PCB is meticulously designed with the following **4 layers** to optimize **s
 
 <p align="center">
     <img src="Images/Layer3.png" width="700" alt="Ground Layer View">
-    <p align="center">Figure 3: Internal ground plane serving as robust ground reference and EMI shield</p>
+    <p align="center">Figure 5: Internal ground plane serving as robust ground reference and EMI shield</p>
 </p>
 
 4.  **Layer Bottom (B.Cu - Bottom Copper):**
@@ -83,7 +93,7 @@ The PCB is meticulously designed with the following **4 layers** to optimize **s
 
 <p align="center">
     <img src="Images/Layer4.png" width="700" alt="Bottom Layer View">
-    <p align="center">Figure 4: Bottom copper layer showing secondary routing and connections</p>
+    <p align="center">Figure 6: Bottom copper layer showing secondary routing and connections</p>
 </p>
 
 ## Key Components
