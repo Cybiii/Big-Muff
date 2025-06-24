@@ -38,23 +38,23 @@ Based on the schematic, here's a breakdown of each section of the Big Muff circu
 
 ### Section 1: Input Buffer / Pre-Amplifier (Q1)
 
-**Function:** This stage acts as a high-impedance input buffer and pre-amplifier. The large input resistors help present a high input impedance to the guitar signal, preventing loading of the guitar's pickups. Q1 amplifies the incoming signal while the supporting network provides frequency shaping and stability.
+- **Function:** This stage acts as a high-impedance input buffer and pre-amplifier. The large input resistors help present a high input impedance to the guitar signal, preventing loading of the guitar's pickups. Q1 amplifies the incoming signal while the supporting network provides frequency shaping and stability.
 
 ### Section 2.1: First Gain/Clipping Stage (Q2)
 
-**Function:** This is a key gain and clipping stage. Q2 provides significant amplification, and the diodes D1 and D2 are placed in a feedback configuration to clip the amplified signal when it reaches a certain voltage threshold, producing the characteristic Big Muff distortion and sustain.
+- **Function:** This is a key gain and clipping stage. Q2 provides significant amplification, and the diodes D1 and D2 are placed in a feedback configuration to clip the amplified signal when it reaches a certain voltage threshold, producing the characteristic Big Muff distortion and sustain.
 
 ### Section 2.2: Second Gain/Clipping Stage (Q3)
 
-**Function:** This stage provides further amplification and clipping. The signal from Q2 is fed into Q3, which amplifies it even more. Diodes D3 and D4 perform another round of signal clipping, contributing to the heavy, saturated distortion sound characteristic of the Big Muff.
+- **Function:** This stage provides further amplification and clipping. The signal from Q2 is fed into Q3, which amplifies it even more. Diodes D3 and D4 perform another round of signal clipping, contributing to the heavy, saturated distortion sound characteristic of the Big Muff.
 
 ### Section 3: Tone Control (Passive Network)
 
-**Function:** This is the passive "Tone" control section, a hallmark of the Big Muff. It's a variable filter that allows you to sweep between more bass-heavy (less treble) and more treble-heavy (less bass) sounds. The specific capacitor values determine the frequencies affected by the tone control.
+- **Function:** This is the passive "Tone" control section, a hallmark of the Big Muff. It's a variable filter that allows you to sweep between more bass-heavy (less treble) and more treble-heavy (less bass) sounds. The specific capacitor values determine the frequencies affected by the tone control.
 
 ### Section 4: Output Buffer / Volume Control (Q4)
 
-**Function:** This final stage acts as an output buffer and incorporates the master volume control. Q4 provides a final stage of amplification and buffering to drive the output effectively. The volume control allows adjustment of the overall loudness of the distorted signal before it leaves the pedal.
+- **Function:** This final stage acts as an output buffer and incorporates the master volume control. Q4 provides a final stage of amplification and buffering to drive the output effectively. The volume control allows adjustment of the overall loudness of the distorted signal before it leaves the pedal.
 
 ## PCB Layers
 
@@ -62,7 +62,7 @@ The PCB is meticulously designed with the following **4 layers** to optimize **s
 
 1.  **Layer Top (F.Cu - Front Copper):**
 
-    - **Description:** This is the primary **component placement layer**, accommodating **Surface Mount Devices (SMDs)** and **through-hole components**. It's strategically utilized for **critical signal routing**, **component interconnections**, and minimizing trace lengths for optimal **signal integrity**.
+    - **Description:** This is the primary **component placement layer**, accommodating **Surface Mount Devices** and **through-hole components**. It's strategically utilized for **critical signal routing**, **component interconnections**, and minimizing trace lengths for optimal **signal integrity**.
 
 <p align="center">
     <img src="Images/Layer1.png" width="700" alt="Top Layer View">
@@ -80,7 +80,7 @@ The PCB is meticulously designed with the following **4 layers** to optimize **s
 
 3.  **Ground Layer (In2.Cu - Inner Copper 2):**
 
-    - **Description:** A comprehensive **internal ground plane**. This solid plane serves as a universal **low-impedance return path** for all signals, significantly reducing **electromagnetic interference (EMI)**, enhancing **electromagnetic compatibility (EMC)**, and providing effective **shielding** for sensitive audio traces.
+    - **Description:** A comprehensive **internal ground plane**. This solid plane serves as a universal **low-impedance return path** for all signals, significantly reducing **electromagnetic interference (EMI)**, enhancing **electromagnetic compatibility**, and providing effective **shielding** for sensitive audio traces.
 
 <p align="center">
     <img src="Images/Layer3.png" width="700" alt="Ground Layer View">
@@ -103,29 +103,10 @@ The PCB is meticulously designed with the following **4 layers** to optimize **s
 - **Various Resistors:** Carbon film or metal film for bias, load, and feedback
 - **Capacitors:** Mix of electrolytic, film, and ceramic types for different functions
 - **Potentiometers:** Volume and Tone controls (typically 100kΩ)
-- **Input/Output Jacks:** 1/4" mono jacks for guitar input and amplifier output
 
-## Capacitor Types and Applications
-
-### For Larger Capacitance Values (e.g., 1μF):
+## For Larger Capacitance Values (e.g., 1μF):
 
 We typically utilize **electrolytic capacitors**. These are commonly used for coupling between stages and for power supply filtering due to their high capacitance in a relatively small form factor. **Important:** Electrolytic capacitors are **polarized**, meaning they must be installed with the correct orientation (positive lead to higher voltage, negative lead to lower voltage/ground) to prevent damage.
-
-### For Smaller Capacitance Values (e.g., 470pF, 0.1μF, 0.0015μF, 0.015μF):
-
-**Film capacitors** (such as polyester or metallized polypropylene) or **ceramic capacitors** (like multilayer ceramic capacitors - MLCCs) are generally preferred. These are excellent for tone shaping, filtering, and high-frequency bypassing due to their stability, low noise, and **non-polarized** nature, meaning their orientation in the circuit does not matter.
-
-### Capacitor Footprint: Capacitor_THT:C_Radial_D5.0mm_H7.0mm_P2.00mm
-
-This designation refers to a **Through-Hole Technology (THT) Radial Capacitor** with the following specifications:
-
-- **THT:** Through-hole mounting (leads pass through PCB holes)
-- **Radial:** Both leads emerge from the same end of the capacitor
-- **D5.0mm:** Body diameter of 5.0 millimeters
-- **H7.0mm:** Body height of 7.0 millimeters
-- **P2.00mm:** Pin pitch of 2.00 millimeters between lead centers
-
-This footprint size is commonly used for small electrolytic capacitors or film/ceramic capacitors in audio circuits, depending on the required capacitance and voltage rating.
 
 ## Important Files
 
