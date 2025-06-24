@@ -1,7 +1,7 @@
 # Big Muff from Scratch
 
 <p align="center">
-    <a href="Schematic/BigMuff.pdf">📄 View Schematic PDF</a>
+    <a href="https://www.sebastiansebs.com/BigMuff/BigMuff.pdf">📄 View Schematic PDF</a>
 </p>
 
 ## Overview
