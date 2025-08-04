@@ -1,4 +1,4 @@
-# Big Muff from Scratch
+# Big Muff
 
 <p align="center">
     <a href="https://www.sebastiansebs.com/BigMuff/BigMuff.pdf">📄 View Schematic PDF</a>
